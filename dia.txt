@@ -1,37 +1,36 @@
-0 1 1 1
-1 4 1 _onze
-1 4 2 _doze
-1 4 3 _treze
-1 4 4 _catorze
-1 4 5 _quinze
-1 4 6 _dezasseis
-1 4 7 _dezassete
-1 4 8 _dezoito
-1 4 9 _dezanove
-0 5 2 _vinte
-0 5 2 _dois
-5 2 eps _e
-5 4 eps eps 1
-2 4 1 _um
-2 4 2 _dois
-2 4 3 _tres
-2 4 4 _quatro
-2 4 5 _cinco
-2 4 6 _seis
-2 4 7 _sete
-2 4 8 _oito
-2 4 9 _nove
-0 5 2 _vinte
-0 5 2 _dois
-5 2 eps _e
-5 4 eps eps 1
-2 4 1 _um
-2 4 2 _dois
-2 4 3 _tres
-2 4 4 _quatro
-2 4 5 _cinco
-2 4 6 _seis
-2 4 7 _sete
-2 4 8 _oito
-2 4 9 _nove
-4
+
+0 1 1 eps
+0 0 0 eps
+0 5 1 _um 1
+0 5 2 _dois 1
+0 5 3 _tres 1
+0 5 4 _quatro
+0 5 5 _cinco
+0 5 6 _seis
+0 5 7 _sete
+0 5 8 _oito
+0 5 9 _nove
+
+1 5 1 _onze
+1 5 2 _doze
+1 5 3 _treze
+1 5 4 _catorze
+1 5 5 _quinze
+1 5 6 _dezasseis
+1 5 7 _dezassete
+1 5 8 _dezoito
+1 5 9 _dezanove
+
+0 3 2 _vinte
+0 3 3 _trinta
+3 4 eps _e
+4 5 1 _um
+4 5 2 _dois
+4 5 3 _tres
+4 5 4 _quatro
+4 5 5 _cinco
+4 5 6 _seis
+4 5 7 _sete
+4 5 8 _oito
+4 5 9 _nove
+5
