@@ -17,6 +17,10 @@ fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  2mile.txt > 2mile.fst
 
 fstconcat 2mile.fst dia.fst > ano.fst
 
+fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  barra.txt > barra.fst
+
+fstconcat dia.fst barra.fst mes.fst barra.fst ano.fst > numerico2texto.fst
+
 
 python3 ./scripts/word2fst.py -s syms.txt 10/SET/2018 > dummy_input_date.txt
 fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  dummy_input_date.txt |  fstarcsort > dummy_input_date.fst
