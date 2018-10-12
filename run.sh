@@ -13,18 +13,28 @@ fstdraw    --isymbols=syms.txt --osymbols=syms-out.txt --portrait misto2numerico
 fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  dia.txt > dia.fst
 fstdraw    --isymbols=syms.txt --osymbols=syms-out.txt --portrait dia.fst | dot -Tpdf  > dia.pdf
 
+fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  mes.txt > mes.fst
+fstdraw    --isymbols=syms.txt --osymbols=syms-out.txt --portrait mes.fst | dot -Tpdf  > mes.pdf
+
 fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  2mile.txt > 2mile.fst
 
 fstconcat 2mile.fst dia.fst > ano.fst
 
 fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  barra.txt > barra.fst
 
-fstconcat dia.fst barra.fst mes.fst barra.fst ano.fst > numerico2texto.fst
+fstconcat dia.fst barra.fst > diabarra.fst
+fstconcat mes.fst barra.fst > mesbarra.fst
+
+fstconcat mesbarra.fst ano.fst > mesbarraano.fst
+
+fstconcat diabarra.fst mesbarraano.fst > numerico2texto.fst
 
 
-python3 ./scripts/word2fst.py -s syms.txt 10/SET/2018 > dummy_input_date.txt
-fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  dummy_input_date.txt |  fstarcsort > dummy_input_date.fst
+python3 ./scripts/word2fst.py -s syms.txt 25/05/2018 > dummy_numerico.txt
 
-fstcompose dummy_input_date.fst misto2numerico.fst > new_date.fst
-echo -n "New date é: "
-fstproject --project_output new_date.fst | fstrmepsilon | fsttopsort | fstprint --acceptor --isymbols=syms.txt | awk '{print $3}'
+fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  dummy_numerico.txt |  fstarcsort > dummy_numerico.fst
+
+
+fstcompose dummy_numerico.fst numerico2texto.fst > numericoteste.fst
+
+fstproject --project_output numericoteste.fst | fstrmepsilon | fsttopsort | fstprint --acceptor --isymbols=syms.txt | awk '{print $3}'
