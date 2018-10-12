@@ -18,11 +18,44 @@ fstdraw    --isymbols=syms.txt --osymbols=syms-out.txt --portrait misto2numerico
 fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  mmmen2mmmpt.txt | fstarcsort > mmmen2mmmpt.fst
 fstdraw --isymbols=syms.txt --osymbols=syms-out.txt --portrait mmmen2mmmpt.fst | dot -Tpdf  > mmmen2mmmpt.pdf
 
+
 # Generates the binary transducer used to translate mixed dates from english to portuguese
 fstconcat date2date.fst mmmen2mmmpt.fst | fstclosure | fstdisambiguate > en2pt.fst
 
+
 # Generates the binary transducer used to translate mixed dates from portuguese to english
 fstinvert en2pt.fst > pt2en.fst
+
+################### Item c. ###################
+
+fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  dia.txt > dia.fst
+fstdraw    --isymbols=syms.txt --osymbols=syms-out.txt --portrait dia.fst | dot -Tpdf  > dia.pdf
+
+fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  mes.txt > mes.fst
+fstdraw    --isymbols=syms.txt --osymbols=syms-out.txt --portrait mes.fst | dot -Tpdf  > mes.pdf
+
+fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  2mile.txt > 2mile.fst
+
+fstconcat 2mile.fst dia.fst > ano.fst
+
+fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  barra.txt > barra.fst
+
+fstconcat dia.fst barra.fst > diabarra.fst
+fstconcat mes.fst barra.fst > mesbarra.fst
+
+fstconcat mesbarra.fst ano.fst > mesbarraano.fst
+
+fstconcat diabarra.fst mesbarraano.fst > numerico2texto.fst
+
+
+python3 ./scripts/word2fst.py -s syms.txt 25/05/2018 > dummy_numerico.txt
+
+fstcompile --isymbols=syms.txt --osymbols=syms-out.txt  dummy_numerico.txt |  fstarcsort > dummy_numerico.fst
+
+
+fstcompose dummy_numerico.fst numerico2texto.fst > numericoteste.fst
+
+fstproject --project_output numericoteste.fst | fstrmepsilon | fsttopsort | fstprint --acceptor --isymbols=syms.txt | awk '{print $3}'
 
 ################### e. Tests ###################
 #
@@ -57,6 +90,3 @@ fstproject --project_output 84980_pt2en.fst | fstrmepsilon | fsttopsort | fstpri
 #fstcompose 84980_pt.fst pt2en.fst | fstarcsort > 84980_pt2en.fst
 #echo -n "84980 completed 18 years on: "
 #fstproject --project_output 84980_pt2en.fst | fstrmepsilon | fsttopsort | fstprint --acceptor --isymbols=syms.txt | awk '{print $3}'
-
-
-
