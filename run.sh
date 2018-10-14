@@ -47,19 +47,13 @@ fstconcat diabarra.fst mesbarraano.fst > numerico2texto.fst
 
 #
 ### misto2texto ###
-fstcompose misto2numerico.fst numerico2texto.fst > misto2texto.fst
+fstcompose misto2numerico.fst numerico2texto.fst | fstclosure > misto2texto.fst
 fstdraw --isymbols=syms.txt --osymbols=syms-out.txt --portrait misto2texto.fst | dot -Tpdf > misto2texto.pdf
 
 #
 ### data2texto ###
-fstunion numerico2texto.fst misto2texto.fst > data2texto.fst
-fstdraw --isymbols=syms.txt --osymbols=syms-out.txt --portrait data2texto.fst | dot -Tpdf > numericoormisto2texto.pdf
-
-#fstintersect numerico2texto.fst misto2texto.fst > data2texto.fst
-
-#fstdifference numerico2texto.fst misto2texto.fst > numericoxormisto2texto.fst
-
-#fstunion numericoandmisto2texto.fst numericoxormisto2texto.fst > data2texto.fst
+fstcompose misto2numerico.fst numerico2texto.fst | fstclosure > data2texto.fst
+fstdraw --isymbols=syms.txt --osymbols=syms-out.txt --portrait data2texto.fst | dot -Tpdf > data2texto.pdf
 
 ###################  TESTS  ###################
 
@@ -119,10 +113,10 @@ fstproject --project_output 84980_misto2texto.fst | fstrmepsilon | fsttopsort | 
 #
 # xxxxx_data2texto
 # numerico2texto
-fstcompose 80845_numerico.fst data2texto.fst > 80845_data2texto.fst
-echo "80845_data2texto (numerico):"
+fstcompose 80845_misto.fst data2texto.fst > 80845_data2texto.fst
+echo "80845_data2texto (misto):"
 fstproject --project_output 80845_data2texto.fst | fstrmepsilon | fsttopsort | fstprint --acceptor --isymbols=syms.txt | awk '{print $3}'
-fstcompose 84980_misto.fst data2texto.fst > 84980_data2texto.fst
-echo "84980_data2texto (misto):"
+fstcompose 84980_numerico.fst data2texto.fst > 84980_data2texto.fst
+echo "84980_data2texto (numerico):"
 fstproject --project_output 84980_data2texto.fst | fstrmepsilon | fsttopsort | fstprint --acceptor --isymbols=syms.txt | awk '{print $3}'
 
