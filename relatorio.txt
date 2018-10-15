@@ -1,0 +1,10 @@
+Relatório do Mini-Projecto 1 de Língua Natural
+
+Grupo 48
+
+	80845, Rui Loureiro
+	84980, Nuno Cordeiro
+
+Para o transdutor misto2numerico, optámos por criar dois transdutores auxiliares: um primeiro, mmm2mm.fst, cuja função é essencialmente traduzir cada mês de formato mmm para mm (e.g. SET -> 09); o segundo, date2date.fst, serve para transcrever uma data em formato numérico sem alterar nada. No fim, concatenámos os dois auxiliares de forma a gerar um transdutor capaz de traduzir a componente do mês em formato mmm para mm, sem alterar a restante data.
+
+
