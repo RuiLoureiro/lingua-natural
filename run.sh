@@ -44,6 +44,7 @@ fstconcat mes.fst barra.fst > mesbarra.fst
 fstconcat mesbarra.fst ano.fst > mesbarraano.fst
 
 fstconcat diabarra.fst mesbarraano.fst > numerico2texto.fst
+fstdraw --isymbols=syms.txt --osymbols=syms-out.txt --portrait numerico2texto.fst | dot -Tpdf  > numerico2texto.pdf
 
 #
 ### misto2texto ###
@@ -112,7 +113,6 @@ echo "84980_misto2texto:"
 fstproject --project_output 84980_misto2texto.fst | fstrmepsilon | fsttopsort | fstprint --acceptor --isymbols=syms.txt | awk '{print $3}'
 #
 # xxxxx_data2texto
-# numerico2texto
 fstcompose 80845_misto.fst data2texto.fst > 80845_data2texto.fst
 echo "80845_data2texto (misto):"
 fstproject --project_output 80845_data2texto.fst | fstrmepsilon | fsttopsort | fstprint --acceptor --isymbols=syms.txt | awk '{print $3}'
