@@ -25,10 +25,10 @@ def process_file(input_name):
 
     token_dictionaries = []
 
-    token_dictionaries.append(get_token_dictionary("recursos/list_people.txt", "_actor"))
     token_dictionaries.append(get_token_dictionary("recursos/list_movies.txt", "_movie_"))
-    token_dictionaries.append(get_token_dictionary("recursos/list_companies.txt", "_company"))
+    token_dictionaries.append(get_token_dictionary("recursos/list_people.txt", "_actor_"))
     token_dictionaries.append(get_token_dictionary("recursos/list_characters.txt", "_character_"))
+    token_dictionaries.append(get_token_dictionary("recursos/list_companies.txt", "_company_"))
     token_dictionaries.append(get_token_dictionary("recursos/list_genres.txt", "_genre_"))
     token_dictionaries.append(get_token_dictionary("recursos/list_jobs.txt", "_job_"))
     #token_dictionaries.append(get_token_dictionary("recursos/list_keywords.txt", "_keyword_"))
@@ -43,10 +43,15 @@ def process_file(input_name):
 
     #print(token_dictionaries[5])
 
+    punctuation_to_remove = string.punctuation.replace('_', '').replace(':', '')
+
+    print(punctuation_to_remove)
+
+
     for aline in input:
         new_sentence = aline
 
-        new_sentence = new_sentence.translate(str.maketrans("", "", string.punctuation)) + ' '
+        new_sentence = new_sentence.translate(str.maketrans("", "", punctuation_to_remove)) + ' '
 
         for d in token_dictionaries:
             for value, token in d.items():
