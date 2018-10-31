@@ -1,0 +1,208 @@
+actor_name relevant actors _movie_
+actor_name actors entered _movie_
+character_name characters _movie_
+character_name characters seen _movie_
+spoken_language languages spoken _movie_ eleven
+person_name director _movie_
+actor_name starred _movie_
+actor_name actor played part _character_ _movie_
+actor_name entered movie _movie_
+actor_name actors played part _movie_
+actor_name actors starred _movie_ eleven
+character_name characters _movie_
+character_name characters entered benhur
+character_name parts played movie _character_
+actor_name actor played _character_ _movie_
+actor_name played part _character_ _movie_
+character_name character _actor_ played _movie_
+character_name part played _movie_ _actor_
+character_name role taken _actor_ movie _movie_ eleven
+character_name role _actor_ play _movie_
+character_name tell role played _actor_ _movie_
+character_name role played _actor_ _movie_
+actor_name played part _character_ _movie_
+actor_name voiced _character_ movie _movie_
+actor_name actor played role _character_ _movie_
+actor_name actors participated _actor_ _movie_
+actor_name acted _actor_ _movie_
+actor_name acted _movie_ roberts _movie_
+actor_name actors participated _movie_ along side _actor_
+actor_name acted _actor_ _movie_
+runtime running time _movie_
+runtime lenght movie _movie_
+runtime long movie _movie_
+runtime running time _movie_
+runtime run time _movie_
+runtime long _movie_ last
+overview overview _movie_
+overview give overview _movie_
+overview overview _movie_
+overview whats overview movie _movie_
+overview tell overview _movie_
+budget much budget _movie_
+budget budget _movie_
+budget american gangsters budget
+budget money spent _movie_
+budget _movie_ much budget
+original_language original language spoken das leben der anderen
+original_language main language used movie _movie_
+original_language used language _movie_
+original_language main language _movie_
+original_language idiom used _movie_
+release_date year _movie_
+release_date year movie _movie_ debut
+release_date year _movie_ produced
+release_date year _movie_ produced
+release_date year _movie_ come
+release_date month _movie_ released
+release_date month _movie_ make debut
+release_date _movie_ released month
+release_date tell month _movie_ made debut
+release_date debut _movie_ occured month
+release_date release date _movie_
+release_date _movie_ _character_ released
+release_date debut _movie_
+release_date _movie_ come cinemas
+release_date release date _movie_
+revenue profit made movie _movie_
+revenue revenue _movie_
+revenue much profit _movie_ generate
+revenue box office made _movie_
+revenue much money made movie _movie_
+original_title movies _actor_ take part director
+original_title movies _actor_ direct
+original_title movies directed _actor_
+original_title movies _actor_ directed
+original_title throught career movies _actor_ directed
+production_country _movie_ shot
+production_country _movie_ produced
+production_country country _movie_ shot
+production_country countries _movie_ shot
+production_country countries _movie_ produced
+production_company companies produced _movie_
+production_company companies responsible production movie _movie_
+production_company companies produced _movie_
+production_company movie companies produced movie _movie_
+production_company companies produced _movie_
+spoken_language tongues heard _movie_
+spoken_language movie _movie_ languages spoken
+spoken_language languages used _movie_
+spoken_language languages heard _movie_
+original_title movies _actor_ appear
+original_title _actor_ took part movies
+original_title mr entered movies
+original_title movies _actor_ enter
+original_title many movies _actor_ enter
+original_title _actor_ participated many movies
+original_title career many movies _actor_ direct
+original_title many movies _actor_ direct
+original_title many movies _actor_ directed
+original_title many movies directed _actor_
+original_title tell many movies directed _actor_
+original_title _actor_ participated many movies career
+original_title first movie _actor_ starred
+original_title movie _actor_ start acting career
+original_title movie _actor_ start acting career
+original_title first movie feature _actor_
+original_title first movie ever _actor_
+original_title _actor_ started directing movie
+original_title first movie directed _actor_
+original_title _actor_ started directing career movie
+original_title first movie directed _actor_
+original_title _character_ spielbergs first movie
+original_title movies _actor_ take part
+genre genres movie _movie_
+genre movie _movie_ belongs genres
+genre kind movie ai artificial intelligence
+genre genres movie _movie_ belong
+genre tell genres _movie_
+keyword keywords movie _movie_
+keyword keywords _movie_
+keyword tell keywords _movie_
+keyword relevant words _movie_
+keyword keywords _movie_
+person_name director directed _movie_
+person_name inceptions director
+person_name show director _movie_
+person_name director _movie_
+person_name _movie_ directed
+person_name directed _movie_
+vote_avg rating _movie_
+vote_avg 0 10 average vote given _movie_
+vote_avg rating given movie _movie_
+original_title movies _character_ _movie_ direct
+original_title movies made _actor_
+vote_avg average rating given movie _movie_
+vote_avg vote average _movie_ rises
+original_title latest movie _movie_ sandler enters
+original_title latest movie featuring _actor_
+original_title recent movie feature _actor_
+original_title recent movie _actor_ seen
+original_title last movie _actor_ appears
+original_title oldest movie ever made
+original_title oldest movie produced
+original_title movie produced longest time ago
+original_title whats title oldest movie
+original_title first movie released
+original_title recent movie released
+original_title latest movie debut
+original_title movie recently released
+original_title tell latest movie released
+original_title recent movie premier cinemas
+actor_name many actors participated _movie_
+actor_name number actors _movie_
+actor_name many actors played role _movie_
+actor_name whats _character_ actors involved making _movie_
+actor_name production _movie_ involved many actors
+character_name many characters total _movie_
+character_name many characters entered movie _movie_
+character_name total many characters _movie_
+character_name show character count _movie_
+character_name movie _movie_ many characters
+original_title profitable movie time
+original_title movie made revenue
+original_title profitable movie ever made
+original_title movie generated largest profit
+original_title movie generated largest box office
+original_title least profitable movie ever
+original_title movie made smallest box office
+original_title movies made one generated smallest revenue
+original_title movie made least profit
+original_title movie generated least income
+original_title longest movie ever made
+original_title whats movie lasts longest
+original_title show longest movie record
+original_title movie longest run time
+original_title movie longest runtime
+original_title shortest movie ever released
+original_title movie lasts least
+original_title tell title shortest movie ever released
+original_title movies made whats shortest one
+original_title movie shortest run time
+original_title movie highest rating
+original_title movie given best rating
+original_title best rated movie
+original_title average whats best rated movie
+original_title movie received best vote average
+original_title movie received worst review ever
+original_title tell whats movie lowest rating
+original_title movies produced one worst rating
+original_title average movie received worst votes
+original_title movie worst vote average
+production_company many companies produced _movie_
+production_company many companies involved production _movie_
+production_company movie _movie_ produced many companies
+production_company production _movie_ involved many companies
+production_company _movie_ produced many companies
+production_country many countries _movie_ shot
+production_country _movie_ shot many countries
+production_country movie _movie_ produced many countries
+production_country production _movie_ made many countries
+production_country whats _character_ countries _movie_ produced
+spoken_language many different languages spoken _movie_
+spoken_language movie _movie_ many languages used
+spoken_language many languages heard _movie_
+spoken_language movie _movie_ many idioms heard
+spoken_language whats _character_ spoken languages _movie_
+original_title many movies _actor_ play part
+original_title _actor_ participated many movies

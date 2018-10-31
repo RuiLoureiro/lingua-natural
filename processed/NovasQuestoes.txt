@@ -1,0 +1,42 @@
+relevant actors _movie_
+characters _movie_
+characters seen movie _movie_
+languages spoken _movie_ eleven
+famous director _movie_
+relevant actors great gatsby
+characters _movie_
+characters seen movie _movie_
+languages spoken _movie_
+famous director _movie_
+important guys acting _movie_
+important actors _movie_
+relevant actors _movie_
+actors playing pirates caribbean : _character_ tides
+characters pirates caribbean : _character_ tides
+characters found _movie_
+languages spoken pirates caribbean : _character_ tides
+famous director pirates caribbean : _character_ tides
+director pirates caribbean : _character_ tides
+directed pirates caribbean : _character_ tides
+important actors pirates caribbean : _character_ tides
+relevant actors pirates caribbean : _character_ tides
+actors playing pirates caribbean : _character_ tides
+characters _movie_
+characters found _movie_
+languages _movie_
+famous director _movie_
+director pirates caribbean : _character_ tides
+directed pirates caribbean : _character_ tides
+main actors _movie_
+main characters _movie_
+characters movie _movie_
+languages spoken _movie_
+guy directed _movie_
+actors main role _movie_
+_movie_ characters
+languages _movie_
+director famous directed _movie_
+important guys acting _movie_
+relevant actors _movie_
+actors playing hobbit : desolation smaug
+names main characters hobbit : desolation smaug
