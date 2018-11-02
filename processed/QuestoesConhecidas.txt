@@ -20,7 +20,7 @@ character_name role taken _actor_ movie _movie_ eleven
 character_name role _actor_ play _movie_
 character_name tell role played _actor_ _movie_
 character_name role played _actor_ _movie_
-actor_name played part _character_ _movie_
+actor_name played part _character_in _movie_
 actor_name voiced _character_ movie _movie_
 actor_name actor played role _character_ _movie_
 actor_name actors participated _actor_ _movie_
@@ -41,7 +41,7 @@ overview whats overview movie _movie_
 overview tell overview _movie_
 budget much budget _movie_
 budget budget _movie_
-budget american gangsters budget
+budget _character_gangsters budget
 budget money spent _movie_
 budget _movie_ much budget
 original_language original language spoken das leben der anderen
@@ -150,7 +150,7 @@ original_title movie recently released
 original_title tell latest movie released
 original_title recent movie premier cinemas
 actor_name many actors participated _movie_
-actor_name number actors _movie_
+actor_name _character_of actors _movie_
 actor_name many actors played role _movie_
 actor_name whats _character_ actors involved making _movie_
 actor_name production _movie_ involved many actors
