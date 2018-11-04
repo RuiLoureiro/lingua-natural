@@ -45,7 +45,6 @@ Por exemplo, uma frase com o token character 'Uniform Outside Station' estava a 
 
 A accuracy manteve-se igual com esta alteração.
 
-
 Decidimos agora tentar otimizar o algoritmo de número minimo de edições.
 
 Começámos pela atribuição de custo à inserção, remoção e substituição.
@@ -53,3 +52,8 @@ Pela análise do ficheiro QuestoesConhecidas, foi claro que a remoção deveria 
 
 No entanto, não conseguimos alterar os pesos usando a função da bilbioteca nltk, pelo que decidimos escrever nós o algoritmo.
 Assim, atribuimos à remoção um peso de 0, e às restantes operações remoção e substituição um peso de 1.
+
+Com esta alteração a accuracy subiu para 100%.
+
+Foram feitas outras alterações mais simples que não contabilizámos a alteração da accuracy:
+eliminação de linhas em branco, passar todas as strings para lower case, etc.
