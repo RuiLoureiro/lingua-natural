@@ -52,11 +52,14 @@ Decidimos agora tentar otimizar o algoritmo de número mínimo de edições.
 Começámos pela atribuição de custo à inserção, remoção e substituição.
 Pela análise do ficheiro QuestoesConhecidas, foi claro que a remoção deveria ter baixo custo, face às outras duas operações. Isto porque no caso de frases com mais palavras, muitas destas não acrescentam nada ao significado da frase, de acordo com o objetivo deste projeto.
 
-No entanto, não conseguimos alterar os custos usando a função da bilbioteca nltk, pelo que decidimos escrever nós o algoritmo, utilizando o pseudo-código fornecido na sebenta da cadeira
-Assim, atribuimos à operação de remoção um custo nulo, e às restantes operações inserção e substituição um custo de 1.
+No entanto, não conseguimos alterar os custos usando a função da bilbioteca nltk, pelo que decidimos escrever nós o algoritmo, utilizando o pseudo-código fornecido na sebenta da cadeira, com umas pequenas alterações.
+Assim, atribuímos à operação de remoção um custo nulo, e às restantes operações inserção e substituição um custo de 1.
 
 Com esta alteração a accuracy subiu para 100%.
 
 Foram feitas outras alterações mais simples que não contabilizámos para a alteração da accuracy como a eliminação de linhas em branco, passar todas as strings para lower case, etc.
 
 Concluimos, contudo, que este tagger é apenas capaz de identificar o tipo de questões com base num set pré-definido de tags e em questões cuja sintaxe está também pré-definida e inalterável (ficheiro QuestoesConhecidas.txt) pelo que qualquer questão que fuja à sintaxe das questes já existentes poderá vir a ser mal etiquetada. No entanto, as que seguirem a sintaxe delineada pelo ficheiro de "treino" serão sempre etiquetadas de forma correcta, tendo em conta a técnica utilizada.
+
+Bibliografia:
+Todos os conteúdos teóricos para a elaboração deste projecto foram devidamente extraídos a partir da sebenta da Cadeira de LN.
