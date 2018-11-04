@@ -25,7 +25,15 @@ Para alguém que saiba que 'Titanic' e 'Reservoir Dogs' são nomes de filmes, es
 
 Assim, decidimos substituir nos dois ficheiros referidos, todas as ocorrências de nomes de filmes por _movie_, atores por _actor_, e assim succesivamente para todos as listas.
 
-A ordem pela qual substituimos é também relevante, pois quando corremos o programa tendo definido a ordem aleatoriamente, notámos que as listas com strings mais pequenas e mais gerais, como é o caso de 'list_characters', estavam a substituir partes de ocorrências de strings maiores e mais específicas, como é o caso de 'list_characters'. Assim, definimos a ordem : movies, people, characters, companies, genres, jobs. Não podemos dizer que esta ordem é óptima, pois comeste corpora, a accuracy mantinha-se sempre igual
+Com esta alteração obtemos uma accuracy de ~73.81
+
+Notámos, no entanto, que estava a ser substituido o token _keyword_ em grande parte das sentences, em muitos sitios erradamente (do ponto de vista semântico), pois este ficheiro contém strings muito gerais. Retirámos então a substituição de keywords, tendo a accuracy subido para ~76.19%.
+Sendo que não vimos uma melhor maneira de utilizar o ficheiro de keywords, decidimos não o utilizar.
+
+A ordem pela qual substituimos é também relevante, pois quando corremos o programa tendo definido a ordem aleatoriamente, notámos que as listas com strings mais pequenas e mais gerais, como é o caso de 'list_characters', estavam a substituir partes de ocorrências de strings maiores e mais específicas, como é o caso de 'list_characters'. Assim, definimos a ordem : movies, people, characters, companies, genres, jobs. 
+Com esta alteração, a accuracy subiu para 85.71%.
+
+Não podemos dizer que esta ordem é óptima, pois com este corpora, a accuracy é igual para ordens diferentes, não tendo conseguido subir o accuracy mais do que o refeirod.
 
 Começámos pela atribuição de custo à inserção, remoção e substituição.
 Pela análise do ficheiro QuestoesConhecidas, foi claro que a remoção deveria ter baixo custo, face às outras duas operações. Isto porque no caso de frases com mais palavras, muitas destas não acrescentam nada ao significado da frase, de acordo com o objetivo deste projeto.
