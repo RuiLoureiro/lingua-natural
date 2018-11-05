@@ -23,6 +23,7 @@ Começámos pelo pré-processamento do ficheiro de treino (QuestoesConhecidas) b
 Tal como foi referido na introdução, foram-nos disponibilizados ficheiros com listas (tokens) de nomes de atores, nomes de filmes, géneros de filmes, posições na área do cinema, nomes de personagens e keywords relacionadas com filmes.
 
 Usando as seguintes frases como exemplo:
+
 * What is the actor in Titanic
 * What is the actor in Reservoir Dogs
 
@@ -64,6 +65,7 @@ Com esta alteração a accuracy subiu para 100%.
 
 Foram feitas outras alterações mais simples que não contabilizámos para a alteração da accuracy como a eliminação de linhas em branco, passar todas as strings para lower case, etc.
 
+## Conclusão
 Concluimos, contudo, que este tagger é apenas capaz de identificar o tipo de questões com base num set pré-definido de tags e em questões cuja sintaxe está também pré-definida e inalterável (ficheiro QuestoesConhecidas.txt) pelo que qualquer questão que fuja à sintaxe das questões já existentes poderá vir a ser mal etiquetada. No entanto, as que seguirem a sintaxe delineada pelo ficheiro de "treino" serão sempre etiquetadas de forma correcta, tendo em conta a técnica utilizada.
 
 Concluimos também que, apesar de o método de número minimo de edições ter tido um bom desempenho para este projeto, tal não aconteceria se fosse necessário processar um corpus de treino maior.
