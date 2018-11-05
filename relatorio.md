@@ -61,5 +61,9 @@ Foram feitas outras alterações mais simples que não contabilizámos para a al
 
 Concluimos, contudo, que este tagger é apenas capaz de identificar o tipo de questões com base num set pré-definido de tags e em questões cuja sintaxe está também pré-definida e inalterável (ficheiro QuestoesConhecidas.txt) pelo que qualquer questão que fuja à sintaxe das questes já existentes poderá vir a ser mal etiquetada. No entanto, as que seguirem a sintaxe delineada pelo ficheiro de "treino" serão sempre etiquetadas de forma correcta, tendo em conta a técnica utilizada.
 
+Concluimos também que, apesar de o método de número minimo de edições ter tido um bom desempenho para este projeto, tal não aconteceria se fosse necessário processar um corpus de treino maior.
+Este método realiza todo o processamento (percorrer todo o corpus de treino), sempre que queremos etiquetar uma nova frase, sendo impraticável para corpus grandes.
+Para corpus maiores, um método baseado num classificador seria bem mais eficiente, porque apenas temos que percorrer o corpus quando queremos construir o modelo, sendo as posteriores classificações de frases desconhecidas realizadas em tempo constante, não dependendo estas do tamanho do corpus.
+
 Bibliografia:
 Todos os conteúdos teóricos para a elaboração deste projecto foram devidamente extraídos a partir da sebenta da Cadeira de LN.
