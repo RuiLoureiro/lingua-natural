@@ -1,25 +1,32 @@
-Nomes: 
-Nuno Cordeiro nº 84980
-Rui Loureiro nº 80845
+# 2º Mini-Projecto de Língua Natural
 
+### Realizado por:
+* Nuno Cordeiro nº 84980
+* Rui Loureiro nº 80845
+
+## Introdução
 Para este segundo mini-projecto de Língua Natural, foi-nos apresentada a tarefa de etiquetar questões sobre um dado tema (cinema) com base num set de 16 etiquetas já pré-definidas para o problema, sendo estas:
 actor_name, budget, character_name, genre, keyword, original_language, original_title, overview, person_name, production_company, production_country, release_date, revenue, runtime, spoken_language e vote_avg.
 Foram-nos fornecidas também questões devidamente etiquetadas pelas quais deveríamos basear a nossa previsão. Para além deste ficheiro de "treino", tivemos também acesso a um ficheiro com novas questões para etiquetarmos de acordo com a técnica de previsão utilizada.
 
-Para o tipo de problema descrito, o método abordado nas aulas que nos pareceu mais adequado foi o de número mínimo de edições, usando as palavras como tokens. 
-Assim, optámos numa primeira abordagem por usar a função da biblioteca nltk, com todos os parâmetros default.
+## Proposta de Solução
+
+
+Para o tipo de problema descrito, o método abordado nas aulas que nos pareceu mais adequado foi o de **número mínimo de edições**, usando as palavras como tokens. 
+Optámos pela linguagem Python, não só por estarmos familiarizados com a mesma, mas também pelo facto de existirem bibliotecas, como a **nltk**, que fornecem já muitas funções úteis para o problema em questão.
+Assim, optámos numa primeira abordagem por usar a função da biblioteca **nltk**, com todos os parâmetros default.
 
 Decidimos que esta configuração era adequada para obter o baseline, tendo obtido uma accuracy de cerca de 71.43%.
 
 O objetivo seria agora otimizar o algoritmo de número mínimo de edições, bem como processar os ficheiros de entrada.
 
-Começámos pelo pré-processamento do ficheiro de treino (QuestoesConhecidas) bem como o de NovasQuestoes.
 
+Começámos pelo pré-processamento do ficheiro de treino (QuestoesConhecidas) bem como o de NovasQuestoes.
 Tal como foi referido na introdução, foram-nos disponibilizados ficheiros com listas (tokens) de nomes de atores, nomes de filmes, géneros de filmes, posições na área do cinema, nomes de personagens e keywords relacionadas com filmes.
 
 Usando as seguintes frases como exemplo:
-What is the actor in Titanic
-What is the actor in Reservoir Dogs
+* What is the actor in Titanic
+* What is the actor in Reservoir Dogs
 
 Para alguém que saiba que 'Titanic' e 'Reservoir Dogs' são nomes de filmes, estas duas queries são exatamente iguais, do ponto de vista de tokens. 
 
