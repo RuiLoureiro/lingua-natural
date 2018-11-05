@@ -10,8 +10,6 @@ actor_name, budget, character_name, genre, keyword, original_language, original_
 Foram-nos fornecidas também questões devidamente etiquetadas pelas quais deveríamos basear a nossa previsão. Para além deste ficheiro de "treino", tivemos também acesso a um ficheiro com novas questões para etiquetarmos de acordo com a técnica de previsão utilizada.
 
 ## Proposta de Solução
-
-
 Para o tipo de problema descrito, o método abordado nas aulas que nos pareceu mais adequado foi o de **número mínimo de edições**, usando as palavras como tokens. 
 Optámos pela linguagem Python, não só por estarmos familiarizados com a mesma, mas também pelo facto de existirem bibliotecas, como a **nltk**, que fornecem já muitas funções úteis para o problema em questão.
 Assim, optámos numa primeira abordagem por usar a função da biblioteca **nltk**, com todos os parâmetros default.
@@ -66,11 +64,11 @@ Com esta alteração a accuracy subiu para 100%.
 
 Foram feitas outras alterações mais simples que não contabilizámos para a alteração da accuracy como a eliminação de linhas em branco, passar todas as strings para lower case, etc.
 
-Concluimos, contudo, que este tagger é apenas capaz de identificar o tipo de questões com base num set pré-definido de tags e em questões cuja sintaxe está também pré-definida e inalterável (ficheiro QuestoesConhecidas.txt) pelo que qualquer questão que fuja à sintaxe das questes já existentes poderá vir a ser mal etiquetada. No entanto, as que seguirem a sintaxe delineada pelo ficheiro de "treino" serão sempre etiquetadas de forma correcta, tendo em conta a técnica utilizada.
+Concluimos, contudo, que este tagger é apenas capaz de identificar o tipo de questões com base num set pré-definido de tags e em questões cuja sintaxe está também pré-definida e inalterável (ficheiro QuestoesConhecidas.txt) pelo que qualquer questão que fuja à sintaxe das questões já existentes poderá vir a ser mal etiquetada. No entanto, as que seguirem a sintaxe delineada pelo ficheiro de "treino" serão sempre etiquetadas de forma correcta, tendo em conta a técnica utilizada.
 
 Concluimos também que, apesar de o método de número minimo de edições ter tido um bom desempenho para este projeto, tal não aconteceria se fosse necessário processar um corpus de treino maior.
 Este método realiza todo o processamento (percorrer todo o corpus de treino), sempre que queremos etiquetar uma nova frase, sendo impraticável para corpus grandes.
 Para corpus maiores, um método baseado num classificador seria bem mais eficiente, porque apenas temos que percorrer o corpus quando queremos construir o modelo, sendo as posteriores classificações de frases desconhecidas realizadas em tempo constante, não dependendo estas do tamanho do corpus.
 
-Bibliografia:
-Todos os conteúdos teóricos para a elaboração deste projecto foram devidamente extraídos a partir da sebenta da Cadeira de LN.
+## Bibliografia
+Todos os conteúdos teóricos usados para a elaboração deste projecto foram devidamente extraídos a partir da sebenta da Cadeira de LN.
