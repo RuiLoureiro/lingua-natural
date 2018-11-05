@@ -1,6 +1,6 @@
 # 2º Mini-Projecto de Língua Natural
 
-### Realizado por:
+### Realizado pelo grupo 31:
 * Nuno Cordeiro nº 84980
 * Rui Loureiro nº 80845
 
