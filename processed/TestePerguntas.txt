@@ -1,0 +1,199 @@
+actor played _character_in _movie_
+actor played _character_in _movie_
+actor played role _character_in _movie_
+actors entered _movie_
+actors played part _movie_
+actors starred _movie_
+actors participated _movie_ along side _actor_
+entered movie _movie_
+starred _movie_
+actors participated _actor_ _movie_
+acted _actor_ _movie_
+relevant actors _movie_
+played part _character_ _movie_
+played part _character_ _movie_
+voiced _character_ movie _movie_
+_character_of actors _movie_
+production _movie_ involved many actors
+whats _character_ actors involved making _movie_
+many actors participated _movie_
+many actors played role _movie_
+much budget _movie_
+money spent _movie_
+_movie_ much budget
+_movie_ budget
+budget _movie_
+budget _movie_
+budget _movie_
+_movie_ budget
+much _movie_ financial plan
+financial plan _movie_
+many characters entered movie _movie_
+many characters total _movie_
+total many characters _movie_
+show character count _movie_
+movie _movie_ many characters
+characters seen _movie_
+characters entered _movie_
+_job_ _movie_
+parts played movie _movie_
+characters _movie_
+tell role played _actor_ _movie_
+role _actor_ play _movie_
+character _actor_ played _movie_
+part played _movie_ _actor_
+role played _actor_ _movie_
+role taken _actor_ movie _movie_
+tell genre _movie_
+movie _movie_ belongs genre
+genre movie _movie_ belong
+genres movie _movie_
+genre movie _movie_
+kind movie _movie_
+genres movie _movie_
+movie _movie_ belongs genres
+genres movie _movie_
+kind movie _movie_
+keywords define movie _movie_
+keywords movie _movie_
+keywords _movie_
+tell keywords _movie_
+keywords _movie_
+relevant words _movie_
+_movie_ keywords
+relevant keywords _movie_
+keywords _movie_
+main language _movie_
+main language used movie _movie_
+used language _movie_
+original language spoken _movie_
+idiom used _movie_
+main language _movie_
+_movie_ main language
+used language _movie_
+original language _movie_
+main idiom _movie_
+movie _movie_ many languages used
+movie _movie_ languages spoken
+many different languages spoken _movie_
+many languages heard _movie_
+movie _movie_ many idioms heard
+languages spoken _movie_
+languages used _movie_
+languages heard _movie_
+whats _character_ spoken languages _movie_
+tongues heard _movie_
+_movie_ many languages spoken
+many different languages _movie_
+languages _movie_
+_character_of spoken languages _movie_
+_character_of tongues _movie_
+whats shortest one
+many movies _actor_ direct
+many movies _actor_ directed career
+many movies directed _actor_
+movie received worst votes
+whats best rated movie
+many movies _actor_ enter
+movies _actor_ take part director
+movies _actor_ appear
+movies _actor_ enter
+_actor_ participated many movies
+_actor_ participated many movies
+_actor_ _character_ movies
+recent movie feature _actor_
+least profit movie
+movie longest run time
+movie generated smallest revenue
+movie worst rating
+longest movie
+many movies directed _actor_
+best rated movie
+best rated movie
+last _actor_ movie
+longest movie ever
+oldest movie ever
+shortest movie ever
+least profitable movie ever
+profitable movie ever
+movies _actor_
+movie _actor_ start career
+first movie _actor_
+give overview _movie_
+overview _movie_
+tell overview _movie_
+overview _movie_
+whats overview movie _movie_
+_movie_ overview
+overview _movie_
+summary _movie_
+give summary movie _movie_
+show director _movie_
+_movie_ directed
+director directed _movie_
+directed _movie_
+_movie_ _actor_ ever playeds director
+director _movie_
+_character_ _movie_
+_movie_ director
+many companies produced _movie_
+many companies involved production _movie_
+_movie_ produced many companies
+movie _movie_ produced many companies
+production _movie_ involved many companies
+companies responsible production movie _movie_
+movie companies produced movie _movie_
+companies produced _movie_
+companies produced _movie_
+companies produced _movie_
+many countries _movie_ shot
+_movie_ shot many countries
+movie _movie_ produced many countries
+production _movie_ made many countries
+whats _character_ countries _movie_ produced
+countries _movie_ produced
+countries _movie_ shot
+country _movie_ shot
+_movie_ shot
+_movie_ produced
+_character_of countries _movie_ shot
+_character_of countries shot _movie_
+_character_of countries produced _movie_
+year _movie_
+month _movie_ make debut
+year _movie_ come
+year _movie_ produced
+year _movie_ produced
+month _movie_ released
+release date _movie_
+_movie_ released month
+tell month _movie_ made debut
+debut _movie_ occured month
+release date _movie_
+year movie _movie_ debut
+_movie_ reloaded come cinemas
+_movie_ released
+debut _movie_
+much money made movie _movie_
+much profit _movie_ generate
+box office made _movie_
+profit made movie _movie_
+revenue _movie_
+long _movie_ last
+long movie _movie_
+lenght movie _movie_
+run time _movie_
+running time _movie_
+run time _movie_
+running time _movie_
+long _movie_
+length movie _movie_
+0 10 average vote given _movie_
+average rating given movie _movie_
+rating given movie _movie_
+rating _movie_
+vote average _movie_
+average vote given _movie_ 0 10
+average vote _movie_ 0 10
+rating average _movie_
+vote average _movie_

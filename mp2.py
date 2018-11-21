@@ -10,9 +10,9 @@ import time
 process_file(sys.argv[1])
 process_file(sys.argv[2])
 
-corpora_s, corpora_t = format_corpora("processed/QuestoesConhecidas.txt")
+corpora_s, corpora_t = format_corpora("processed/" + sys.argv[1])
 
-predicted = predict_tags(corpora_s, corpora_t, "processed/NovasQuestoes.txt")
+predicted = predict_tags(corpora_s, corpora_t, "processed/" + sys.argv[2])
 
 for i in predicted:
 	print(i)

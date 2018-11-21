@@ -36,8 +36,7 @@ def process_file(input_name):
 	# This is already working but decreases accuracy from 100% to ~83%
 	# token_dictionaries.append(get_token_dictionary("recursos/list_keywords.txt", "_keyword_"))
 
-	path, actual_name = input_name.split("/", 1)
-	output_name = 'processed/' + actual_name
+	output_name = 'processed/' + input_name
 
 	input = open(input_name, "r")
 	output = open(output_name, "w")
